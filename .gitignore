@@ -1,0 +1,29 @@
+# Python Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Python Bytecode and cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Node / JS dependencies and build files
+node_modules/
+dist/
+build/
+.eslintcache
+
+# Local Database files (ChromaDB persistence)
+backend/chroma_db/
+chroma_db/
+
+# Local configuration and environment variables
+.env
+.env.local
+.env.*.local
+
+# Operating System Files
+.DS_Store
+Thumbs.db
