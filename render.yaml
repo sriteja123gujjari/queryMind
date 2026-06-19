@@ -10,15 +10,9 @@ services:
     envVars:
       - key: PYTHON_VERSION
         value: 3.11.0
-      - key: CHROMA_DB_PATH
-        value: /var/data/chroma_db
       - key: GROQ_API_KEY
         sync: false
       - key: GEMINI_API_KEY
         sync: false
       - key: ANTHROPIC_API_KEY
         sync: false
-    disk:
-      name: chroma-storage
-      mountPath: /var/data
-      sizeGB: 1
