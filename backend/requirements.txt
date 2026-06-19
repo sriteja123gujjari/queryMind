@@ -3,11 +3,10 @@ uvicorn
 langchain
 langchain-core
 langchain-community
-langchain-huggingface
 langchain-text-splitters
 chromadb
 pymupdf
 python-dotenv
-sentence-transformers
 python-multipart
 requests
+onnxruntime
