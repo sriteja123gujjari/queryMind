@@ -27,9 +27,17 @@ load_dotenv()
 app = FastAPI(title="QueryMind Backend API", version="1.0")
 
 # Enable CORS for the React frontend
+# ALLOWED_ORIGINS env var can be a comma-separated list of origins, e.g.:
+#   "https://querymind.vercel.app,http://localhost:5173"
+_raw_origins = os.getenv("ALLOWED_ORIGINS", "*")
+allowed_origins = (
+    ["*"] if _raw_origins.strip() == "*"
+    else [o.strip() for o in _raw_origins.split(",") if o.strip()]
+)
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Allow all origins for local ease-of-use
+    allow_origins=allowed_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
