@@ -68,7 +68,7 @@ def query_groq(prompt: str, system_prompt: str, api_key: str, model: str) -> str
         "Content-Type": "application/json"
     }
     payload = {
-        "model": model or "llama-3.3-70b-versatile",
+        "model": model or "openai/gpt-oss-120b",
         "messages": [
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": prompt}
