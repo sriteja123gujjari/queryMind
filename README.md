@@ -82,7 +82,7 @@ The first deployment on Render (free tier) kept crashing with out-of-memory erro
 
 | Upload & Chat | Source Inspector |
 |---|---|
-| <img src="screenshots/chat.png" width="400"> | <img src="screenshots/sources.png" width="400"> |
+| <img src="screenshots/chat.png" width="400"> | <img src="screenshots/source inspector.png" width="400"> |
 
 ---
 
